@@ -1,0 +1,15 @@
+# ninja log v7
+20	656	8101519381920010	mytest_autogen/timestamp	f60fcf0a974d190
+20	656	8101519381920010	mytest_autogen/mocs_compilation.cpp	f60fcf0a974d190
+20	656	8101519381920010	C:/Users/范帅哥/Desktop/C++编程训练/MiniDraw/mytest/out/build/debug/mytest_autogen/timestamp	f60fcf0a974d190
+20	656	8101519381920010	C:/Users/范帅哥/Desktop/C++编程训练/MiniDraw/mytest/out/build/debug/mytest_autogen/mocs_compilation.cpp	f60fcf0a974d190
+699	4461	8101519382956371	CMakeFiles/mytest.dir/Ellipse.cpp.obj	73b11fd2a17276a2
+687	4743	8101519382829233	CMakeFiles/mytest.dir/Shape.cpp.obj	f22bf45b3838cd1a
+706	4912	8101519383026392	CMakeFiles/mytest.dir/Rect.cpp.obj	99b3eba45d85f49d
+693	4932	8101519382890711	CMakeFiles/mytest.dir/Line.cpp.obj	367069ea00281a3e
+669	5171	8101519382660348	CMakeFiles/mytest.dir/main.cpp.obj	e610a661ee0ab858
+712	5426	8101519383078302	CMakeFiles/mytest.dir/Poly.cpp.obj	cbc8de53601e4cb6
+681	5590	8101519382778206	CMakeFiles/mytest.dir/viewwidget.cpp.obj	cf48ef630457342d
+675	5709	8101519382720518	CMakeFiles/mytest.dir/minidraw.cpp.obj	8c0ca147cd6066f8
+663	5808	8101519382598579	CMakeFiles/mytest.dir/mytest_autogen/mocs_compilation.cpp.obj	da1485c9278e3e63
+5808	6030	8101519434051806	mytest.exe	b8e99d2a9c53a96e

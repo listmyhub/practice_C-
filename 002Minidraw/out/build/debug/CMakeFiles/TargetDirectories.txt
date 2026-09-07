@@ -1,0 +1,8 @@
+C:/Users/范帅哥/Desktop/C++编程训练/MiniDraw/mytest/out/build/debug/CMakeFiles/mytest.dir
+C:/Users/范帅哥/Desktop/C++编程训练/MiniDraw/mytest/out/build/debug/CMakeFiles/edit_cache.dir
+C:/Users/范帅哥/Desktop/C++编程训练/MiniDraw/mytest/out/build/debug/CMakeFiles/rebuild_cache.dir
+C:/Users/范帅哥/Desktop/C++编程训练/MiniDraw/mytest/out/build/debug/CMakeFiles/list_install_components.dir
+C:/Users/范帅哥/Desktop/C++编程训练/MiniDraw/mytest/out/build/debug/CMakeFiles/install.dir
+C:/Users/范帅哥/Desktop/C++编程训练/MiniDraw/mytest/out/build/debug/CMakeFiles/install/local.dir
+C:/Users/范帅哥/Desktop/C++编程训练/MiniDraw/mytest/out/build/debug/CMakeFiles/mytest_autogen_timestamp_deps.dir
+C:/Users/范帅哥/Desktop/C++编程训练/MiniDraw/mytest/out/build/debug/CMakeFiles/mytest_autogen.dir
