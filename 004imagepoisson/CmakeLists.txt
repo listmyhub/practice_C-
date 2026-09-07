@@ -1,0 +1,63 @@
+cmake_minimum_required(VERSION 3.16)
+project(MyQtOpenCVProject)
+
+# 设置 C++ 标准
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# Qt 相关设置（处理 moc/ui/rcc 文件）
+set(CMAKE_AUTOUIC ON)   # 自动处理 .ui 文件
+set(CMAKE_AUTOMOC ON)   # 自动处理 Q_OBJECT 宏
+set(CMAKE_AUTORCC ON)   # 自动处理 .qrc 资源文件
+
+# ---------- Qt 配置（二选一） ----------
+# 选项 1：使用 Qt6（推荐新版项目使用）
+set(CMAKE_PREFIX_PATH "D:/qt1/6.11.1/msvc2022_64")
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets )
+# 选项 2：使用 Qt5
+# find_package(Qt5 REQUIRED COMPONENTS Core Widgets Gui)
+
+# ---------- OpenCV 配置 ----------
+# 若 find_package 找不到 OpenCV，可手动指定路径
+set(OpenCV_DIR "C:/opencv/build/x64/vc16/lib")  # Windows 示例
+find_package(OpenCV REQUIRED)
+set( EIGEN_INCLUDE_DIR  "C:/System.sav/eigen/eigen-5.0.0")
+include_directories(${EIGEN_INCLUDE_DIR})
+
+
+# ---------- 添加可执行文件 ----------
+#file(GLOB_RECURSE SRC_FILES CONFIGURE_DEPENDS "*.cpp" "*.h" )
+add_executable(${PROJECT_NAME} 
+          main.cpp
+         ImageWidget.h
+         ImageWidget.cpp
+          mainwindow.cpp
+           mainwindow.h
+          mainwindow.ui
+ChildWindow.cpp
+ChildWindow.h
+         Poisson.h
+        Poisson.cpp
+         Polygon.h
+         Polygon.cpp
+        Rect.h
+        Rect.cpp
+     ScanLine.h
+     ScanLine.cpp
+shape.h
+shape.cpp
+)
+
+# ---------- 链接库 ----------
+target_link_libraries(${PROJECT_NAME}
+    # Qt（二选一）
+    Qt6::Core
+    Qt6::Widgets
+    Qt6::Gui
+    # 或 Qt5::Core Qt5::Widgets Qt5::Gui
+    # OpenCV
+    ${OpenCV_LIBS}
+)
+
+# 包含 OpenCV 头文件目录
+target_include_directories(${PROJECT_NAME} PRIVATE ${OpenCV_INCLUDE_DIRS})
